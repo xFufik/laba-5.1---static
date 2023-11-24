@@ -13,12 +13,13 @@ int main() {
     setlocale(LC_ALL, "ru");
 
     int i, N, kol, length;
-    int A[50];
     length = 0;
     kol = 0;
 
     cout << "Введите размер массива N: ";
     cin >> N;
+
+    int A[50];
 
     if (N <= 0 || N > 50) {
         cerr << "Размер массива должен быть от 1 до 50";
