@@ -9,7 +9,6 @@ using namespace std;
 * return 0 - все ок. return 1 - ошибка.
 */
 
-
 int main() {
     setlocale(LC_ALL, "ru");
 
