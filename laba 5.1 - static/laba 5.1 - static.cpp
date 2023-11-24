@@ -15,11 +15,10 @@ int main() {
     int i, N, kol, length;
     length = 0;
     kol = 0;
+    int A[50];
 
     cout << "Введите размер массива N: ";
     cin >> N;
-
-    int A[50];
 
     if (N <= 0 || N > 50) {
         cerr << "Размер массива должен быть от 1 до 50";
