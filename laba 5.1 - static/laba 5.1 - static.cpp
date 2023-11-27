@@ -13,7 +13,7 @@ int main() {
     setlocale(LC_ALL, "ru");
 
     int i, N, kol, length;
-    length = 1;
+    length = 0;
     kol = 0;
 
     cout << "Введите размер массива N: ";
@@ -36,14 +36,14 @@ int main() {
             length++;
         }
         else {
-            if (length > 1) {
+            if (length > 0) {
                 kol++;
             }
-            length = 1;
+            length = 0;
         }
     }
 
-    if (length > 1) {
+    if (length > 0) {
         kol++;
     }
     cout << "Количество убывающих участков: " << kol;
