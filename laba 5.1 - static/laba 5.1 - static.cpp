@@ -27,7 +27,7 @@ int main() {
     int A[50];
 
     for (i = 0; i < N; i++) {
-        cout << "A[" << i << "] = ";
+        cout << "Элемент " << i + 1 << ": ";
         cin >> A[i];
     }
 
