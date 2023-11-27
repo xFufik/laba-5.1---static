@@ -1,21 +1,14 @@
-﻿#include <iostream>
+#include <iostream>
 #include <locale>
 
 using namespace std;
-
-/*
-*Лабораторная работа 5. Задание 1. Индивидуальный вариант 24. Статический массив.
-*Найти количество убывающих участков в массиве.
-* return 0 - все ок. return 1 - ошибка.
-*/
 
 int main() {
     setlocale(LC_ALL, "ru");
 
     int i, N, kol, length;
-    length = 0;
+    length = 1;
     kol = 0;
-    int A[50];
 
     cout << "Введите размер массива N: ";
     cin >> N;
@@ -25,8 +18,10 @@ int main() {
         return 1;
     }
 
-    for (int i = 0; i < N; i++) {
-        cout << "Элемент " << i + 1 << ": ";
+    int A[50];
+
+    for (i = 0; i < N; i++) {
+        cout << "A[" << i << "] = ";
         cin >> A[i];
     }
 
@@ -35,16 +30,15 @@ int main() {
             length++;
         }
         else {
-            if (length > 0) {
+            if (length > 1) {
                 kol++;
             }
-            length = 0;
+            length = 1;
         }
     }
 
-    if (length > 0) {
+    if (length > 1) {
         kol++;
     }
     cout << "Количество убывающих участков: " << kol;
-
 }
