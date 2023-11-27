@@ -40,8 +40,8 @@ int main() {
         else {
             if (length > 0) {
                 kol++;
+                length = 0;
             }
-            length = 0;
         }
     }
 
